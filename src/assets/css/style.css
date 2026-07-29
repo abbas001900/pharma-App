@@ -1,0 +1,29 @@
+:root {
+    --bs-pham-primary: #3EB3BD;
+    /* CORRECTION : Enlevez "rgb(" et ")" ici */
+    --bs-pham-primary-rgb: 62, 179, 189; 
+}
+
+/* Classe pour le texte - FONCTIONNE MAINTENANT */
+.text-pharm {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-pham-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* Classe pour le fond (background) - FONCTIONNE MAINTENANT */
+.bg-pharm {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-pham-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* Classe pour les boutons - ÉTAIT DÉJÀ PARFAIT */
+.btn-pharm {
+  color: #fff;
+  background-color: var(--bs-pham-primary);
+  border-color: var(--bs-pham-primary);
+}
+.btn-pharm:hover {
+  color: #fff;
+  background-color: #2d8991; 
+  border-color: #2d8991;
+}
