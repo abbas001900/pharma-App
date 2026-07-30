@@ -27,3 +27,22 @@
   background-color: #2d8991; 
   border-color: #2d8991;
 }
+.rounded-10 {
+  --bs-border-radius: 2.5rem; /* Équivaut à un "rounded-10" virtuel */
+  border-radius: var(--bs-border-radius);
+}
+.no-outline:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-color: #dee2e6; /* Optionnel : conserve la couleur de bordure initiale */
+}
+.nav-underline .nav-link:hover {
+  color: var(--bs-pham-primary) !important;
+  border-bottom-color: var(--bs-pham-primary) !important;
+}
+
+/* Optionnel : Si vous voulez aussi que l'élément "actif" prenne cette couleur */
+.nav-underline .nav-link.active {
+  color: var(--bs-pham-primary) !important;
+  border-bottom-color: var(--bs-pham-primary) !important;
+}
