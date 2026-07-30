@@ -36,6 +36,10 @@
   box-shadow: none !important;
   border-color: #dee2e6; /* Optionnel : conserve la couleur de bordure initiale */
 }
+.nav .nav-link:hover {
+  color: var(--bs-pham-primary) !important;
+  border-bottom-color: var(--bs-pham-primary) !important;
+}
 .nav-underline .nav-link:hover {
   color: var(--bs-pham-primary) !important;
   border-bottom-color: var(--bs-pham-primary) !important;
