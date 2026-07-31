@@ -15,6 +15,9 @@
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-autres-color-rgb), var(--bs-bg-opacity)) !important;
 }
+.text-autre {
+  color: var(--bs-autres-color);
+}
 .bg-coin {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-coin-color-rgb), var(--bs-bg-opacity)) !important;
