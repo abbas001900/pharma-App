@@ -1,9 +1,32 @@
 :root {
     --bs-pham-primary: #3EB3BD;
     /* CORRECTION : Enlevez "rgb(" et ")" ici */
-    --bs-pham-primary-rgb: 62, 179, 189; 
+    --bs-pham-primary-rgb: 62, 179, 189;
+    --bs-autres-color: #FFB61B;
+    --bs-autres-color-rgb: 255, 182, 27; 
+    --bs-coin-color: #5EB2E9;
+    --bs-coin-color-rgb: 94, 178, 233;
+    --bs-diag-color: #84C946;
+    --bs-diag-color-rgb: 132, 201, 70;
+    --bs-soin-color: #F667AB;
+    --bs-soin-color-rgb: 246, 103, 171;
 }
-
+.bg-autre {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-autres-color-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-coin {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-coin-color-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-diagnostique {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-diag-color-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-soin {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-soin-color-rgb), var(--bs-bg-opacity)) !important;
+}
 /* Classe pour le texte - FONCTIONNE MAINTENANT */
 .text-pharm {
   --bs-text-opacity: 1;
