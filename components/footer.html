@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../src/assets/css/style.css">
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid gy-4">
     <header class="row gy-4">
         <nav class="col-12 bg-pharm pt-2">
             <ul class="nav justify-content-between">
@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </nav>
-        <form action="#" class="col-md-5 mx-auto rounded-10 overflow-hidden my-4">
+        <form action="#" class="col-8 col-md-5 mx-auto rounded-10 overflow-hidden my-4">
             <div class="input-group flex-nowrap mx-auto">
                 <input type="text" id="search-input" class="form-control no-outline" placeholder="Rechercher..."
                     aria-label="Username" aria-describedby="addon-wrapping">
@@ -42,8 +42,10 @@
         </form>
         <nav class="col-12 container-fluid">
             <ul class="nav justify-content-between">
-                <li class="nav-item d-flex"><a href="#" class="nav-link p-0 text-decoration-none"><img src="../src/assets/img/icons/Brand-Logo.png" alt="Logo Application"
-                        style="max-width: 15rem; height: auto;"></a>
+                <li class="nav-item d-flex w-25">
+                    <a href="#" class="nav-link p-0 text-decoration-none">
+                        <img class="img-fluid" src="../src/assets/img/icons/Brand-Logo.png" alt="Logo Application">
+                    </a>
                 </li>
                 <li class="nav-item">
                     <ul class="nav nav-underline justify-content-center">
@@ -90,14 +92,55 @@
             </ul>
         </nav>
     </header>
-    <main class="row min-vh-100"></main>
+    <main class="row container-lg mx-auto">
+        <section class="row m-0 w-100 mx-lg-auto container-fluid container-md">
+            <div class="col-6 col-lg-3 col-3">
+                <div class="d-flex align-items-center">
+                    <i class="bi text-white bg-pharm bi-facebook text-center m-2 fs-5 p-card rounded-circle"></i>
+                    <div>
+                        <h6 class="fw-bold m-0">Médicaments</h6>
+                        <p class="text-light-emphasis m-0" style="font-size: 0.85rem;">Plus de 2000 produits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-3 border-start">
+                <div class="d-flex align-items-center">
+                    <i class="bi text-white bg-pharm bi-facebook text-center m-2 fs-5 p-card rounded-circle"></i>
+                    <div>
+                        <h6 class="fw-bold m-0">Soins</h6>
+                        <p class="text-light-emphasis m-0" style="font-size: 0.85rem;">Plus de 2000 produits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 col-3 border-lg-start">
+                <div class="d-flex align-items-center">
+                    <i class="bi text-white bg-pharm bi-facebook text-center m-2 fs-5 p-card rounded-circle"></i>
+                    <div>
+                        <h6 class="fw-bold m-0">Diagnostiques</h6>
+                        <p class="text-light-emphasis m-0" style="font-size: 0.85rem;">Plus de 2000 produits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3 border-start">
+                <div class="d-flex align-items-center">
+                    <i class="bi text-white bg-pharm bi-facebook text-center m-2 fs-5 p-card rounded-circle"></i>
+                    <div>
+                        <h6 class="fw-bold m-0">Médicaments</h6>
+                        <p class="text-light-emphasis m-0" style="font-size: 0.85rem;">Plus de 2000 produits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="min-vh-100"></section>
+    </main>
     <footer class="row">
         <nav>
             <ul class="row list-unstyled gy-4">
                 <li class="col-lg-4">
                     <img src="../src/assets/img/icons/Brand-Logo.png" alt="Logo Application"
                         style="max-width: 15rem; height: auto;">
-                    <p class="text-light-bg-subtle mt-4" style="max-width: 30rem;">Pharma-Shop est votre pharmacie en ligne de confiance au Niger. Nous
+                    <p class="text-light-bg-subtle mt-4" style="max-width: 30rem;">Pharma-Shop est votre pharmacie en
+                        ligne de confiance au Niger. Nous
                         proposons une large gamme de produits pharmaceutiques et parapharmaceutiques de qualité.</p>
                 </li>
                 <li class="col-md-6 col-lg-2">
@@ -118,7 +161,7 @@
                         <a class="nav-link px-0 text-decoration-none text-black">Hygiène</a>
                     </nav>
                 </li>
-                <li class="col-md-6 col-lg-2 border-lg-start px-lg-4">
+                <li class="col-md-6 col-lg-2 border-start px-lg-4">
                     <h6 class="fw-bold">SERVICES</h6>
                     <nav class="nav flex-column">
                         <a class="nav-link px-0 text-decoration-none text-black" href="#">Livraison</a>
@@ -130,15 +173,19 @@
                 <li class="col-md-6 col-lg-2 border-start px-lg-4">
                     <h6 class="fw-bold">SUIVEZ-NOUS</h6>
                     <nav class="nav flex-column">
-                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i class="bi bi-facebook me-2"></i> Facebook</a>
-                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i class="bi bi-twitter-x me-2"></i> Twitter</a>
-                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i class="bi bi-instagram me-2"></i> Instagram</a>
-                        <a class="nav-link px-0 text-decoration-none text-black"><i class="bi bi-linkedin me-2"></i> LinkedIn</a>
+                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i
+                                class="bi bi-facebook me-2"></i> Facebook</a>
+                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i
+                                class="bi bi-twitter-x me-2"></i> Twitter</a>
+                        <a class="nav-link px-0 text-decoration-none text-black" href="#"><i
+                                class="bi bi-instagram me-2"></i> Instagram</a>
+                        <a class="nav-link px-0 text-decoration-none text-black"><i class="bi bi-linkedin me-2"></i>
+                            LinkedIn</a>
                     </nav>
                 </li>
             </ul>
         </nav>
-        <nav class="col">
+        <nav class="col d-none d-md-block">
             <ul class="nav justify-content-center gap-3">
                 <li class="nav-item">
                     <p>Nos partenaires de paiement</p>

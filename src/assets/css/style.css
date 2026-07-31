@@ -50,3 +50,6 @@
   color: var(--bs-pham-primary) !important;
   border-bottom-color: var(--bs-pham-primary) !important;
 }
+.p-card {
+  padding: 0.25rem 0.65rem;
+}
