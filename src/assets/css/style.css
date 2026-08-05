@@ -79,3 +79,40 @@
 .p-card {
   padding: 0.25rem 0.65rem;
 }
+
+/* =========================================================
+   RESPONSIVE — HEADER
+   Ajouts uniquement — aucune règle existante modifiée.
+   Toutes les règles ci-dessous sont désactivées à partir
+   de 992px (lg), la version Desktop reste donc intacte.
+   ========================================================= */
+
+/* Topbar : texte + icônes compacts sur mobile */
+@media (max-width: 575.98px) {
+  header .bg-pharm p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  header .bg-pharm .bi {
+    font-size: 0.9rem !important;
+    margin: 0 0.3rem !important;
+  }
+}
+
+/* Logo : évite qu'il écrase le bouton burger sur mobile/tablette */
+@media (max-width: 991.98px) {
+  header nav .w-25 {
+    width: auto !important;
+  }
+  header nav .w-25 img {
+    max-height: 2.5rem;
+    width: auto;
+  }
+}
+
+/* Offcanvas : largeur confortable sur petit écran */
+@media (max-width: 399.98px) {
+  #mobileNav {
+    width: 85vw;
+  }
+}
