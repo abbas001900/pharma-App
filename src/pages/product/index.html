@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharm-Inv</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="src/assets/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body class="container-fluid d-flex flex-column gap-4 p-0">
@@ -43,18 +43,18 @@
         <nav class="container-fluid">
             <div class="row justify-content-between align-items-center px-3">
                 <div class="col-6 col-lg-3">
-                    <a href="./index.html" class="nav-link p-0 text-decoration-none">
-                        <img class="img-fluid" src="src/assets/img/icons/Brand-Logo.png" alt="Logo Application"
-                            style="max-height: 50px;">
-                    </a>
-                </div>
+<a href="../../../index.html" class="nav-link p-0 text-decoration-none">
+                            <img class="img-fluid" src="../../assets/img/icons/Brand-Logo.png" alt="Logo Application"
+                                style="max-height: 50px;">
+                        </a>
+                    </div>
 
-                <!-- Menu central (lg+) -->
-                <div class="col-lg-6 d-none d-lg-block">
-                    <ul class="nav nav-underline justify-content-center">
-                    <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="./index.html">Home +</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-black fw-bold" href="./src/pages/shop/index.html">Shop +</a></li>
+                    <!-- Menu central (lg+) -->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <ul class="nav nav-underline justify-content-center">
+                            <li class="nav-item"><a class="nav-link text-black fw-bold" href="../../../index.html">Home +</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="../shop/index.html">Shop +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Blog +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Page +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">On Sales +</a></li>
@@ -87,13 +87,13 @@
         <!-- Menu Mobile (Offcanvas) -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
             <div class="offcanvas-header border-bottom">
-                <img src="src/assets/img/icons/Brand-Logo.png" alt="Logo Application" style="max-width: 8rem;">
+                <img src="../../assets/img/icons/Brand-Logo.png" alt="Logo Application" style="max-width: 8rem;">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
             </div>
             <div class="offcanvas-body d-flex flex-column">
                 <ul class="nav flex-column gap-2 mb-4">
-                    <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-black fw-bold" href="./src/pages/shop/index.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link text-black fw-bold" href="../../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page" href="../shop/index.html">Shop</a></li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Page</a></li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">On Sales</a></li>
@@ -165,117 +165,155 @@
             </div>
         </section>
 
-        <!-- Section Publicitaire & Bannières -->
-        <section class="d-flex flex-column gap-4">
-            <div class="rounded-2 p-4" style="background-color: #3EB3BD; min-height: 400px;">
-                <div class="row align-items-center g-4">
-                    <div class="col-12 col-md-6 col-lg-7 text-center">
-                        <img src="src/assets/img/icons/carrousel-3.png" class="img-fluid" alt="Offre Spéciale">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-5">
-                        <h1 class="text-white fw-bold mb-3">Réduction de 25% pour toutes commandes de médicaments</h1>
-                        <div class="d-flex justify-content-between align-items-center text-white mb-3">
-                            <span>Code : <strong>SAVE18</strong></span>
-                            <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                <i class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                <span>Shop Now</span>
-                            </a>
-                        </div>
-                        <div class="mb-2">
-                            <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                <i class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                <span>Gagnez des offres chaque jour</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                <i class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                <span>Livraison gratuite</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="container py-4 py-lg-5">
+            <!-- Page Produit & Avis -->
+            <div class="container py-4 py-md-5">
 
-            <!-- Grille Bannières Secondaires -->
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                    <div class="rounded-2 p-3 h-100 d-flex flex-column justify-content-between"
-                        style="background: linear-gradient(to bottom, #40A642, #87BD5B);">
-                        <div>
-                            <h3 class="text-white fw-bold">Naturellement bien</h3>
-                            <div class="mt-2"><span class="text-white">Jusqu'à 25% de réduction</span></div>
-                            <div class="mt-3">
-                                <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                    <i
-                                        class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                    <span>Achetez maintenant</span>
-                                </a>
+                <!-- FICHE PRODUIT MAIN -->
+                <div class="row align-items-center g-4 g-lg-5">
+
+                    <!-- Image Produit -->
+                    <div class="col-12 col-md-6 col-lg-5 text-center">
+                        <div class="p-3 bg-light rounded-4 shadow-sm">
+                            <img src="./Product-Images/product5.jpg" class="img-fluid rounded-3 object-fit-contain"
+                                alt="Nom du produit" style="max-height: 400px;">
+                        </div>
+                    </div>
+
+                    <!-- Détails Produit -->
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <!-- Évaluations -->
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <div class="text-warning small">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <span class="text-muted small">(13 avis clients)</span>
+                        </div>
+
+                        <h2 class="fw-bold mb-2">Nom du produit</h2>
+                        <h3 class="fw-bold mb-3" style="color: #3EB3BD;">2 000 FCFA</h3>
+
+                        <p class="text-muted mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur laboriosam
+                            magni delectus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+
+                        <!-- Actions Achat -->
+                        <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                            <input type="number" value="1" min="1" class="form-control text-center py-2"
+                                style="max-width: 90px;">
+                            <button class="btn text-white px-4 py-2 flex-grow-1 flex-sm-grow-0 rounded-3"
+                                style="background-color: #3EB3BD;">
+                                <i class="bi bi-bag-fill me-2"></i> Ajouter au panier
+                            </button>
+                        </div>
+
+                        <!-- Souhaits & Partage -->
+                        <div
+                            class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-3 py-3 border-top border-bottom mb-4">
+                            <a href="#" class="text-decoration-none text-dark small fw-semibold">
+                                <i class="bi bi-heart me-1 text-danger"></i> Ajouter à la liste de souhaits
+                            </a>
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="fw-semibold small text-muted">Partager :</span>
+                                <a href="#" class="text-dark"><i class="bi bi-facebook fs-6"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-twitter-x fs-6"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-instagram fs-6"></i></a>
+                                <a href="#" class="text-dark"><i class="bi bi-whatsapp fs-6"></i></a>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-end mt-3">
-                            <img src="src/assets/img/icons/product9-removebg-preview (4).png" class="img-fluid"
-                                alt="Produit Naturel" style="max-height: 140px;">
-                        </div>
+
+                        <!-- Catégorie -->
+                        <p class="mb-0 small">
+                            <strong>Catégorie :</strong>
+                            <a href="#" class="text-decoration-none fw-semibold" style="color: #3EB3BD;">Nom de la
+                                catégorie</a>
+                        </p>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 d-flex flex-column gap-3">
-                    <div class="rounded-2 overflow-hidden text-white d-flex flex-column justify-content-between p-3"
-                        style="background-color: #F197C9; min-height: 230px;">
-                        <div class="py-2 px-3 rounded-2 text-end" style="background-color: #41C0CD;">
-                            <h4 class="m-0 fw-bold">Vitamine Essentiels</h4>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-end">
-                            <img src="src/assets/img/icons/brand-2-removebg-preview.png" class="img-fluid"
-                                style="max-width: 120px;" alt="Vitamines">
-                            <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                <i class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle px-2 me-1"></i>
-                                <span class="small">Acheter</span>
-                            </a>
-                        </div>
-                    </div>
+                <hr class="my-5 text-muted opacity-25">
 
-                    <div class="rounded-2 p-3 text-white d-flex flex-column justify-content-between"
-                        style="background: linear-gradient(to bottom, #D04729, #D87B1E); min-height: 230px;">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <h3 class="fw-bold">Anti-Douleurs</h3>
-                                <p class="small mb-2">Certifié sans-effets secondaires</p>
-                                <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                    <i
-                                        class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                    <span>Acheter</span>
-                                </a>
+                <!-- SECTION AVIS CLIENTS -->
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h4 class="fw-bold mb-4">Avis clients (5)</h4>
+
+                        <!-- Item Avis 1 -->
+                        <div class="border rounded-4 p-3 p-md-4 mb-3 bg-white shadow-sm"
+                            style="border-color: #3EB3BD !important;">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+                                <div>
+                                    <h6 class="fw-bold mb-0">John Doe</h6>
+                                    <small class="text-muted">Lun 01 Jan 2026</small>
+                                </div>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
                             </div>
-                            <img src="src/assets/img/icons/hero-2.png" class="img-fluid"
-                                style="max-width: 120px; object-fit: contain;" alt="Anti-douleurs">
+                            <p class="text-muted mb-0 small">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consequatur
+                                laboriosam magni delectus.
+                            </p>
                         </div>
+
+                        <!-- Item Avis 2 -->
+                        <div class="border rounded-4 p-3 p-md-4 mb-3 bg-white shadow-sm"
+                            style="border-color: #3EB3BD !important;">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+                                <div>
+                                    <h6 class="fw-bold mb-0">Aïchatou M.</h6>
+                                    <small class="text-muted">Mar 02 Jan 2026</small>
+                                </div>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-0 small">
+                                Très bon produit, conforme à mes attentes et livraison rapide !
+                            </p>
+                        </div>
+
+                        <!-- Item Avis 3 -->
+                        <div class="border rounded-4 p-3 p-md-4 mb-3 bg-white shadow-sm"
+                            style="border-color: #3EB3BD !important;">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
+                                <div>
+                                    <h6 class="fw-bold mb-0">Ibrahim K.</h6>
+                                    <small class="text-muted">Mer 03 Jan 2026</small>
+                                </div>
+                                <div class="text-warning small">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-muted mb-0 small">
+                                Produit correct mais le packaging était légèrement abîmé à la réception.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <div class="rounded-2 p-3 h-100 d-flex flex-column justify-content-between"
-                        style="background: linear-gradient(to bottom, #197B9D 0%, #82CED8 100%);">
-                        <div>
-                            <h3 class="text-white fw-bold">Healthcare Product</h3>
-                            <div class="mt-2"><span class="text-white">Jusqu'à 30% de réduction</span></div>
-                            <div class="mt-3">
-                                <a href="#" class="d-flex align-items-center text-decoration-none text-white">
-                                    <i
-                                        class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
-                                    <span>Achetez maintenant</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-end mt-3">
-                            <img src="src/assets/img/icons/product10-removebg-preview.png" class="img-fluid"
-                                alt="Healthcare" style="max-height: 140px;">
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
+
 
         <!-- Section Valeurs / Engagements -->
         <section class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-5">
@@ -349,7 +387,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
                 <div class="col">
                     <div class="card h-100 border-0 text-center shadow-sm p-3">
-                        <img src="src/assets/img/icons/product15-removebg-preview.png" class="card-img-top mx-auto"
+                        <img src="../../assets/img/icons/product15-removebg-preview.png" class="card-img-top mx-auto"
                             style="max-width: 10rem;" alt="Produit">
                         <div class="card-body d-flex flex-column justify-content-between p-0 mt-3">
                             <div>
@@ -373,7 +411,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 text-center shadow-sm p-3">
-                        <img src="src/assets/img/icons/product26-removebg-preview.png" class="card-img-top mx-auto"
+                        <img src="../../assets/img/icons/product26-removebg-preview.png" class="card-img-top mx-auto"
                             style="max-width: 10rem;" alt="Produit">
                         <div class="card-body d-flex flex-column justify-content-between p-0 mt-3">
                             <div>
@@ -397,7 +435,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 text-center shadow-sm p-3">
-                        <img src="src/assets/img/icons/product24-removebg-preview.png" class="card-img-top mx-auto"
+                        <img src="../../assets/img/icons/product24-removebg-preview.png" class="card-img-top mx-auto"
                             style="max-width: 10rem;" alt="Produit">
                         <div class="card-body d-flex flex-column justify-content-between p-0 mt-3">
                             <div>
@@ -421,7 +459,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 border-0 text-center shadow-sm p-3">
-                        <img src="src/assets/img/icons/product21-removebg-preview.png" class="card-img-top mx-auto"
+                        <img src="../../assets/img/icons/product21-removebg-preview.png" class="card-img-top mx-auto"
                             style="max-width: 10rem;" alt="Produit">
                         <div class="card-body d-flex flex-column justify-content-between p-0 mt-3">
                             <div>
@@ -446,50 +484,6 @@
             </div>
         </section>
 
-        <!-- Section Marques Partenaires -->
-        <section class="d-flex flex-column gap-3">
-            <h2 class="fw-bold">Nos Marques Partenaires</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 pb-4">
-                <div class="col">
-                    <div class="card border-0 position-relative shadow-sm">
-                        <img src="src/assets/img/icons/brand-1.jpg" class="card-img rounded-3" alt="Marque 1">
-                        <div
-                            class="w-50 rounded-3 shadow bg-white p-2 position-absolute top-100 start-50 translate-middle text-center">
-                            <img src="src/assets/img/icons/brand-logo-stomach.svg" class="img-fluid" alt="Logo Marque">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 position-relative shadow-sm">
-                        <img src="src/assets/img/icons/brand-4.jpg" class="card-img rounded-3" alt="Marque 2">
-                        <div
-                            class="w-50 rounded-3 shadow bg-white p-2 position-absolute top-100 start-50 translate-middle text-center">
-                            <img src="src/assets/img/icons/brand-logo-hospital.svg" class="img-fluid" alt="Logo Marque">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 position-relative shadow-sm">
-                        <img src="src/assets/img/icons/brand-3.jpg" class="card-img rounded-3" alt="Marque 3">
-                        <div
-                            class="w-50 rounded-3 shadow bg-white p-2 position-absolute top-100 start-50 translate-middle text-center">
-                            <img src="src/assets/img/icons/brand-logo-drugstore.svg" class="img-fluid"
-                                alt="Logo Marque">
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 position-relative shadow-sm">
-                        <img src="src/assets/img/icons/brand-2.jpg" class="card-img rounded-3" alt="Marque 4">
-                        <div
-                            class="w-50 rounded-3 shadow bg-white p-2 position-absolute top-100 start-50 translate-middle text-center">
-                            <img src="src/assets/img/icons/brand-logo-bone-health.svg" class="img-fluid"
-                                alt="Logo Marque">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Section Catégories Populaires -->
         <section class="d-flex flex-column gap-3">
@@ -497,7 +491,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <img src="src/assets/img/icons/category-soins.png" class="card-img-top w-25 mb-2"
+                        <img src="../../assets/img/icons/category-soins.png" class="card-img-top w-25 mb-2"
                             alt="Soins & Lotions">
                         <div class="card-body px-0">
                             <h6 class="fw-bold">SOINS & LOTIONS</h6>
@@ -508,7 +502,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <img src="src/assets/img/icons/category-huiles.png" class="card-img-top w-25 mb-2"
+                        <img src="../../assets/img/icons/category-huiles.png" class="card-img-top w-25 mb-2"
                             alt="Huiles & Extraits">
                         <div class="card-body px-0">
                             <h6 class="fw-bold">HUILES & EXTRAITS</h6>
@@ -519,7 +513,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <img src="src/assets/img/icons/category-médicaments.png" class="card-img-top w-25 mb-2"
+                        <img src="../../assets/img/icons/category-médicaments.png" class="card-img-top w-25 mb-2"
                             alt="Médicaments">
                         <div class="card-body px-0">
                             <h6 class="fw-bold">MÉDICAMENTS & COMPRIMÉS</h6>
@@ -530,7 +524,7 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 h-100">
-                        <img src="src/assets/img/icons/category-sirop.png" class="card-img-top w-25 mb-2"
+                        <img src="../../assets/img/icons/category-sirop.png" class="card-img-top w-25 mb-2"
                             alt="Sirops & Solutions">
                         <div class="card-body px-0">
                             <h6 class="fw-bold">SIROPS & SOLUTIONS</h6>
@@ -539,80 +533,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section Derniers Articles (Blog) -->
-        <section class="container-fluid container-md py-4">
-            <h2 class="fw-bold mb-4">Nos Blogs</h2>
-
-            <!-- Grille Responsive : 1 col sur mobile, 2 sur tablette, 4 sur desktop -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-                <!-- Article 1 -->
-                <div class="col">
-                    <div class="blog-card d-flex flex-column gap-2 h-100">
-                        <img src="src/assets/img/icons/blog-1-330x208.jpg"
-                            class="card-img-top rounded-4 w-100 object-fit-cover" alt="Image de prise de tension">
-                        <span class="d-flex align-items-center justify-content-between mt-2">
-                            <h5 class="fw-bold m-0 fs-6">Posté le</h5>
-                            <p class="text-primary-emphasis m-0" style="font-size: 0.85rem;">14 OCT 2020</p>
-                        </span>
-                        <div class="card-body p-0">
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article 2 -->
-                <div class="col">
-                    <div class="blog-card d-flex flex-column gap-2 h-100">
-                        <img src="src/assets/img/icons/blog-2-330x208.jpg"
-                            class="card-img-top rounded-4 w-100 object-fit-cover" alt="Image de prise de tension">
-                        <span class="d-flex align-items-center justify-content-between mt-2">
-                            <h5 class="fw-bold m-0 fs-6">Posté le</h5>
-                            <p class="text-primary-emphasis m-0" style="font-size: 0.85rem;">14 OCT 2020</p>
-                        </span>
-                        <div class="card-body p-0">
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="col">
-                    <div class="blog-card d-flex flex-column gap-2 h-100">
-                        <img src="src/assets/img/icons/blog-3-330x208.jpg"
-                            class="card-img-top rounded-4 w-100 object-fit-cover" alt="Image de prise de tension">
-                        <span class="d-flex align-items-center justify-content-between mt-2">
-                            <h5 class="fw-bold m-0 fs-6">Posté le</h5>
-                            <p class="text-primary-emphasis m-0" style="font-size: 0.85rem;">14 OCT 2020</p>
-                        </span>
-                        <div class="card-body p-0">
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Article 4 -->
-                <div class="col">
-                    <div class="blog-card d-flex flex-column gap-2 h-100">
-                        <img src="src/assets/img/icons/blog-4-330x208.jpg"
-                            class="card-img-top rounded-4 w-100 object-fit-cover" alt="Image de prise de tension">
-                        <span class="d-flex align-items-center justify-content-between mt-2">
-                            <h5 class="fw-bold m-0 fs-6">Posté le</h5>
-                            <p class="text-primary-emphasis m-0" style="font-size: 0.85rem;">14 OCT 2020</p>
-                        </span>
-                        <div class="card-body p-0">
-                            <p class="card-text text-muted">Some quick example text to build on the card title and make
-                                up the bulk of the card’s content.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -626,7 +546,7 @@
                 <!-- Avis 1 -->
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100">
-                        <img src="src/assets/img/icons/testimonials-4.jpg" alt="Image de Joana Dubois"
+                        <img src="../../assets/img/icons/testimonials-4.jpg" alt="Image de Joana Dubois"
                             class="rounded-circle shadow-sm" style="width: 6rem; height: 6rem; object-fit: cover;">
                         <div class="mt-3">
                             <h5 class="card-title fw-bold mb-1">Joana Dubois</h5>
@@ -647,7 +567,7 @@
                 <!-- Avis 2 -->
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100">
-                        <img src="src/assets/img/icons/testimonials-5.jpg" alt="Image de Charles Maline"
+                        <img src="../../assets/img/icons/testimonials-5.jpg" alt="Image de Charles Maline"
                             class="rounded-circle shadow-sm" style="width: 6rem; height: 6rem; object-fit: cover;">
                         <div class="mt-3">
                             <h5 class="card-title fw-bold mb-1">Charles Maline</h5>
@@ -668,7 +588,7 @@
                 <!-- Avis 3 -->
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100">
-                        <img src="src/assets/img/icons/testimonials-6.jpg" alt="Image de Nina Malo"
+                        <img src="../../assets/img/icons/testimonials-6.jpg" alt="Image de Nina Malo"
                             class="rounded-circle shadow-sm" style="width: 6rem; height: 6rem; object-fit: cover;">
                         <div class="mt-3">
                             <h5 class="card-title fw-bold mb-1">Nina Malo</h5>
@@ -689,7 +609,7 @@
                 <!-- Avis 4 -->
                 <div class="col">
                     <div class="d-flex flex-column align-items-center text-center h-100">
-                        <img src="src/assets/img/icons/testimonials-7.jpg" alt="Image de Christine Laporte"
+                        <img src="../../assets/img/icons/testimonials-7.jpg" alt="Image de Christine Laporte"
                             class="rounded-circle shadow-sm" style="width: 6rem; height: 6rem; object-fit: cover;">
                         <div class="mt-3">
                             <h5 class="card-title fw-bold mb-1">Christine Laporte</h5>
@@ -762,11 +682,11 @@
                     <h6 class="fw-bold mb-3">Téléchargez notre App</h6>
                     <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-3">
                         <a href="#" class="text-decoration-none">
-                            <img src="src/assets/img/icons/app-store.png" alt="App-Store link" class="img-fluid"
+                            <img src="../../assets/img/icons/app-store.png" alt="App-Store link" class="img-fluid"
                                 style="height: 40px;">
                         </a>
                         <a href="#" class="text-decoration-none">
-                            <img src="src/assets/img/icons/google-play.png" alt="Play-Store link" class="img-fluid"
+                            <img src="../../assets/img/icons/google-play.png" alt="Play-Store link" class="img-fluid"
                                 style="height: 40px;">
                         </a>
                     </div>
@@ -785,7 +705,7 @@
 
                 <!-- Colonne Marque / Présentation -->
                 <div class="col-12 col-lg-4">
-                    <img src="src/assets/img/icons/Brand-Logo.png" alt="Logo Pharma-Shop" class="img-fluid mb-3"
+                    <img src="../../assets/img/icons/Brand-Logo.png" alt="Logo Pharma-Shop" class="img-fluid mb-3"
                         style="max-width: 13rem;">
                     <p class="text-muted small pe-lg-4">
                         Pharma-Shop est votre pharmacie en ligne de confiance au Niger. Nous proposons une large gamme
@@ -852,7 +772,7 @@
                 </p>
                 <div class="d-flex align-items-center gap-3 flex-wrap justify-content-center">
                     <span class="text-muted small">Nos partenaires de paiement :</span>
-                    <img src="src/assets/img/icons/payment.png" alt="Moyens de paiement" class="img-fluid"
+                    <img src="../../assets/img/icons/payment.png" alt="Moyens de paiement" class="img-fluid"
                         style="max-height: 28px;">
                 </div>
             </div>
@@ -860,7 +780,7 @@
         </div>
     </footer>
     <!-- Inclusion du JS Bootstrap indispensable pour l'Offcanvas / Modals -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.min.js"></script>
+    <script src="../../assets/css/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
