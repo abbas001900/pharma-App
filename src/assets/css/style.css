@@ -3,7 +3,7 @@
     /* CORRECTION : Enlevez "rgb(" et ")" ici */
     --bs-pham-primary-rgb: 62, 179, 189;
     --bs-autres-color: #FFB61B;
-    --bs-autres-color-rgb: 255, 182, 27; 
+    --bs-autres-color-rgb: 255, 182, 27;
     --bs-coin-color: #5EB2E9;
     --bs-coin-color-rgb: 94, 178, 233;
     --bs-diag-color: #84C946;
@@ -87,6 +87,48 @@
    de 992px (lg), la version Desktop reste donc intacte.
    ========================================================= */
 
+.btn-outline-pharm {
+  color: var(--bs-pham-primary);
+  border: 1px solid var(--bs-pham-primary);
+  background-color: transparent;
+}
+
+.btn-outline-pharm:hover {
+  color: #fff;
+  background-color: var(--bs-pham-primary);
+  border-color: var(--bs-pham-primary);
+}
+
+/* ADMIN PANEL STYLES */
+.admin-btn-pharm {
+  background: linear-gradient(135deg, #3EB3BD 0%, #5EC7D0 100%);
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(62, 179, 189, 0.3);
+}
+
+.admin-btn-pharm:hover {
+  box-shadow: 0 8px 25px rgba(62, 179, 189, 0.5);
+  background: linear-gradient(135deg, #2d8991 0%, #3EB3BD 100%);
+  color: #fff;
+}
+
+.auth-illustration {
+  background: linear-gradient(135deg, #2d8991 0%, #3eb3bd 50%, #5ec7d0 100%);
+}
+
+.auth-card .form-control:focus {
+  border-color: var(--bs-pham-primary);
+  box-shadow: 0 0 0 0.2rem rgba(62, 179, 189, 0.2);
+}
+
+
+.custom-tooltip {
+  --bs-tooltip-bg: gray;
+  --bs-tooltip-color: white;
+}
+
+
 /* Topbar : texte + icônes compacts sur mobile */
 @media (max-width: 575.98px) {
   header .bg-pharm p {
@@ -110,9 +152,72 @@
   }
 }
 
+/* Cards : suppression des ombres */
+.card,
+.blog-card,
+.partner-section .card {
+  box-shadow: none !important;
+}
+
+/* Marques partenaires : plus d'espacement sur mobile/tablette */
+.partner-section .row {
+  row-gap: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .partner-section {
+    gap: 1.5rem !important;
+  }
+
+  .partner-section .row {
+    row-gap: 2.25rem;
+  }
+
+  .partner-section .card {
+    padding-bottom: 1.25rem;
+  }
+}
+
+/* Header mobile : couleurs cohérentes avec le desktop */
+@media (max-width: 991.98px) {
+  header > nav:nth-of-type(2) .nav-link,
+  header > nav:nth-of-type(2) .bi,
+  header > nav:nth-of-type(2) .btn,
+  header > nav:nth-of-type(2) .btn i {
+    color: #1f1f1f !important;
+  }
+
+  header > nav:nth-of-type(2) .nav-link:hover,
+  header > nav:nth-of-type(2) .nav-link.active {
+    color: #1f1f1f !important;
+    border-color: #1f1f1f !important;
+  }
+
+  header .offcanvas {
+    background-color: var(--bs-pham-primary) !important;
+  }
+
+  header .offcanvas .nav-link,
+  header .offcanvas .btn-close {
+    color: #fff !important;
+  }
+
+  header .d-lg-none .btn {
+    color: #1f1f1f !important;
+    background-color: transparent !important;
+    border: 1px solid #1f1f1f !important;
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  header .d-lg-none .btn i {
+    color: #1f1f1f !important;
+  }
+}
+
 /* Offcanvas : largeur confortable sur petit écran */
 @media (max-width: 399.98px) {
   #mobileNav {
-    width: 85vw;
+    width: 80vw;
   }
 }
