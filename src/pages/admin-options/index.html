@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options du site | Pharm-Inv</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body class="bg-light">
+    <main class="container-fluid p-0">
+        <div class="container py-5">
+            <div class="card shadow-lg border-0 rounded-4 mx-auto" style="max-width: 1000px;">
+                <div class="card-body p-4 p-lg-5">
+                    <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
+                        <div>
+                            <h3 class="fw-bold mb-1">Options du site web</h3>
+                            <p class="text-muted mb-0">Modifiez les informations principales visibles par les clients.</p>
+                        </div>
+                        <a href="../sign-in/index.html" class="btn btn-outline-pharm rounded-3">
+                            <i class="bi bi-arrow-left me-2"></i>Retour au panneau
+                        </a>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5 class="fw-semibold mb-4">Modifier les options de contact</h5>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">N° de téléphone contact</label>
+                                <input type="text" class="form-control" placeholder="+227 80 00 00 00">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">N° de boîte postale</label>
+                                <input type="text" class="form-control" placeholder="BP 1234">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5 class="fw-semibold mb-4">Modifier les options de localisation</h5>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Localisation : Pays</label>
+                                <input type="text" class="form-control" placeholder="Niger">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Localisation : Ville</label>
+                                <input type="text" class="form-control" placeholder="Niamey">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5 class="fw-semibold mb-4">Modifier la description du bas de page</h5>
+                        <textarea class="form-control" rows="5" placeholder="Pharma-Shop est fière d'être la meilleure pharmacie en ligne au Niger avec une gamme de produits de haute qualité."></textarea>
+                    </div>
+
+                    <div class="mb-5">
+                        <h5 class="fw-semibold">Modifier l'affiche publicitaire</h5>
+                        <small class="text-muted fst-italic d-block mb-3">Cliquez sur l'image pour la modifier</small>
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <img src="../../assets/img/icons/ads-placeholder.svg" class="img-fluid rounded-4 border" alt="Affiche publicitaire" style="max-width: 260px; height: auto;">
+                            <label class="border rounded d-flex justify-content-center align-items-center text-secondary" style="width:220px;height:120px;cursor:pointer;">
+                                <input type="file" hidden>
+                                <i class="bi bi-plus fs-2"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <button class="btn btn-pharm text-white">Valider</button>
+                        <a href="../sign-in/index.html" class="btn btn-secondary text-white">Annuler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0 mt-4">
+            <hr class="mt-0">
+            <p class="text-secondary text-center mb-4">Copyright © 2025 Pharma-Shop, tous droits réservés</p>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
