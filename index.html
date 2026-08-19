@@ -15,7 +15,7 @@
     <!-- Header -->
     <header class="mb-4">
         <nav class="w-100 bg-pharm pt-2">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
                 <p class="text-white mb-2 mb-md-0">Livraison gratuite pour toute commande de plus de 10.000 FCFA</p>
                 <ul class="text-white nav">
                     <li class="nav-item"><a href="#" class="text-white text-decoration-none"><i
@@ -116,8 +116,8 @@
     <main class="container-lg d-flex flex-column gap-5 my-4">
 
         <!-- Section Catégories Principales -->
-        <section class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-5">
-            <div class="col">
+        <section class="container-lg mx-auto row g-3 row-cols-2 row-cols-md-3 row-cols-lg-5">
+            <div class="col border-end">
                 <div class="d-flex align-items-center">
                     <i class="bi bi-capsule-pill text-white bg-pharm text-center m-2 fs-5 p-card rounded-circle"></i>
                     <div>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col border-start-md">
+            <div class="col border-end">
                 <div class="d-flex align-items-center">
                     <i class="bi bi-clipboard2-plus text-white bg-soin text-center m-2 fs-5 p-card rounded-circle"></i>
                     <div>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col border-start-md">
+            <div class="col border-end">
                 <div class="d-flex align-items-center">
                     <i
                         class="bi bi-journal-medical text-white bg-diagnostique text-center m-2 fs-5 p-card rounded-circle"></i>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col border-start-md">
+            <div class="col border-end">
                 <div class="d-flex align-items-center">
                     <i class="bi bi-heart-pulse text-white bg-coin text-center m-2 fs-5 p-card rounded-circle"></i>
                     <div>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col border-start-md">
+            <div class="col">
                 <div class="d-flex align-items-center">
                     <i class="bi bi-hospital text-white bg-autre text-center m-2 fs-5 p-card rounded-circle"></i>
                     <div>
@@ -166,7 +166,7 @@
         </section>
 
         <!-- Section Publicitaire & Bannières -->
-        <section class="d-flex flex-column gap-4">
+        <section class="container d-flex flex-column gap-4">
             <div class="rounded-2 p-4" style="background-color: #3EB3BD; min-height: 400px;">
                 <div class="row align-items-center g-4">
                     <div class="col-12 col-md-6 col-lg-7 text-center">
@@ -174,7 +174,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-5">
                         <h1 class="text-white fw-bold mb-3">Réduction de 25% pour toutes commandes de médicaments</h1>
-                        <div class="d-flex justify-content-between align-items-center text-white mb-3">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center text-white mb-3">
                             <span>Code : <strong>SAVE18</strong></span>
                             <a href="#" class="d-flex align-items-center text-decoration-none text-white">
                                 <i class="bi bi-arrow-right fs-5 text-black bg-white rounded-circle p-1 px-2 me-2"></i>
@@ -238,7 +238,7 @@
 
                     <div class="rounded-2 p-3 text-white d-flex flex-column justify-content-between"
                         style="background: linear-gradient(to bottom, #D04729, #D87B1E); min-height: 230px;">
-                        <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-wrap justify-content-between">
                             <div>
                                 <h3 class="fw-bold">Anti-Douleurs</h3>
                                 <p class="small mb-2">Certifié sans-effets secondaires</p>
@@ -278,7 +278,7 @@
         </section>
 
         <!-- Section Valeurs / Engagements -->
-        <section class="row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-5">
+        <section class="container-lg row g-3 row-cols-1 row-cols-sm-2 row-cols-lg-5">
             <div class="col">
                 <div class="d-flex align-items-center p-2 rounded-3 bg-light">
                     <i class="bi bi-car-front-fill text-black text-center m-2 fs-5 p-card rounded-circle"
@@ -332,7 +332,7 @@
         </section>
 
         <!-- Section Bons Plans du Jour -->
-        <section class="d-flex flex-column gap-3">
+        <section class="container-lg d-flex flex-column gap-3">
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <div class="d-flex align-items-center gap-3">
                     <h2 class="fw-bold m-0">Bons Plans du jour</h2>
@@ -346,7 +346,7 @@
                 </div>
             </div>
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
                 <div class="col">
                     <div class="card h-100 border-0 text-center shadow-sm p-3">
                         <img src="src/assets/img/icons/product15-removebg-preview.png" class="card-img-top mx-auto"
@@ -447,9 +447,9 @@
         </section>
 
         <!-- Section Marques Partenaires -->
-        <section class="d-flex flex-column gap-3 partner-section">
+        <section class="container-lg d-flex flex-column gap-3 partner-section">
             <h2 class="fw-bold">Nos Marques Partenaires</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 pb-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pb-4">
                 <div class="col">
                     <div class="card border-0 position-relative shadow-sm">
                         <img src="src/assets/img/icons/brand-1.jpg" class="card-img rounded-3" alt="Marque 1">
@@ -492,9 +492,9 @@
         </section>
 
         <!-- Section Catégories Populaires -->
-        <section class="d-flex flex-column gap-3">
+        <section class="container-lg d-flex flex-column gap-3">
             <h2 class="fw-bold">Catégories populaires</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
                 <div class="col">
                     <div class="card border-0 h-100">
                         <img src="src/assets/img/icons/category-soins.png" class="card-img-top w-25 mb-2"
@@ -543,7 +543,7 @@
         </section>
 
         <!-- Section Derniers Articles (Blog) -->
-        <section class="container-fluid container-md py-4">
+        <section class="container-lg py-4">
             <h2 class="fw-bold mb-4">Nos Blogs</h2>
 
             <!-- Grille Responsive : 1 col sur mobile, 2 sur tablette, 4 sur desktop -->
@@ -617,7 +617,7 @@
         </section>
 
         <!-- Section avis clients -->
-        <section class="container-fluid container-md py-5">
+        <section class="container-lg py-5">
             <h2 class="fw-bold mb-4 text-center">Ce que disent nos clients</h2>
 
             <!-- Grille Responsive : 1 col sur mobile, 2 sur tablette, 4 sur desktop -->
@@ -711,10 +711,10 @@
         </section>
 
         <!-- Section Contact & Newsletter -->
-        <section class="container-fluid container-md py-5">
+        <section class="container-lg py-5">
 
             <!-- Bloc Newsletter -->
-            <div class="bg-light p-4 p-md-5 rounded-4 text-center mb-5 shadow-sm">
+            <div class="p-4 p-md-5 text-center mb-5">
                 <h4 class="fw-bold m-0">Inscrivez-vous à notre newsletter</h4>
                 <p class="text-muted my-2">
                     Rejoignez 60 000+ nouveaux adhérents et obtenez un nouveau coupon de réduction chaque samedi
@@ -736,7 +736,7 @@
                 <!-- Localisation -->
                 <div class="col">
                     <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
-                        <i class="bi bi-geo-alt fs-1 text-pharm"></i>
+                        <i class="bi bi-geo-alt fs-1 text-black"></i>
                         <div>
                             <h6 class="fw-bold my-1">Niamey, Niger</h6>
                             <p class="text-muted m-0" style="font-size: 0.85rem;">Niamey, Niger</p>
@@ -748,17 +748,17 @@
                 <!-- Téléphone -->
                 <div class="col">
                     <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
-                        <i class="bi bi-phone-vibrate fs-1 text-pharm"></i>
+                        <i class="bi bi-phone-vibrate fs-1 text-black"></i>
                         <div>
                             <h6 class="fw-bold my-1">Pour toute information</h6>
                             <p class="text-muted m-0" style="font-size: 0.85rem;">Consulter ce numéro</p>
-                            <p class="h6 fw-bold my-1 text-pharm">+227 82 00 00 00</p>
+                            <p class="h6 fw-bold my-1">+227 82 00 00 00</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Téléchargement App -->
-                <div class="col text-center text-md-end">
+                <div class="col text-center">
                     <h6 class="fw-bold mb-3">Téléchargez notre App</h6>
                     <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-3">
                         <a href="#" class="text-decoration-none">
@@ -794,7 +794,7 @@
                 </div>
 
                 <!-- Colonne Informations -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-2">
                     <h6 class="fw-bold mb-3">INFORMATIONS</h6>
                     <nav class="nav flex-column gap-2">
                         <a class="nav-link p-0 text-muted small" href="#">Dernières nouvelles</a>
@@ -805,7 +805,7 @@
                 </div>
 
                 <!-- Colonne Catégories -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-2">
                     <h6 class="fw-bold mb-3">CATÉGORIES</h6>
                     <nav class="nav flex-column gap-2">
                         <a class="nav-link p-0 text-muted small" href="#">Médicaments</a>
@@ -816,7 +816,7 @@
                 </div>
 
                 <!-- Colonne Services -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-2">
                     <h6 class="fw-bold mb-3">SERVICES</h6>
                     <nav class="nav flex-column gap-2">
                         <a class="nav-link p-0 text-muted small" href="#">Livraison</a>
@@ -827,7 +827,7 @@
                 </div>
 
                 <!-- Colonne Reseaux Sociaux -->
-                <div class="col-6 col-md-3 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-2">
                     <h6 class="fw-bold mb-3">SUIVEZ-NOUS</h6>
                     <nav class="nav flex-column gap-2">
                         <a class="nav-link p-0 text-muted small" href="#"><i class="bi bi-facebook me-2 text-pharm"></i>
