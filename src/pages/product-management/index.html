@@ -33,49 +33,58 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded" alt="Produit"></td>
+                            <tr role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasRight">
+                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded"
+                                        alt="Produit"></td>
                                 <td class="fw-semibold">Paracétamol</td>
                                 <td>Antidouleur</td>
                                 <td>1500 FCFA</td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center gap-2 flex-wrap">
-                                        <button class="btn btn-light btn-sm text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#modalModifier">
+                                        <button class="btn btn-light btn-sm text-dark fw-semibold"
+                                            data-bs-toggle="modal" data-bs-target="#modalModifier">
                                             <i class="bi bi-pencil-square me-1"></i>Modifier
                                         </button>
-                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalSupprimer">
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modalSupprimer">
                                             <i class="bi bi-trash me-1"></i>Supprimer
                                         </button>
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded" alt="Produit"></td>
+                            <tr role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasRight">
+                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded"
+                                        alt="Produit"></td>
                                 <td class="fw-semibold">Vitamine C</td>
                                 <td>Compléments</td>
                                 <td>2500 FCFA</td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center gap-2 flex-wrap">
-                                        <button class="btn btn-light btn-sm text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#modalModifier">
+                                        <button class="btn btn-light btn-sm text-dark fw-semibold"
+                                            data-bs-toggle="modal" data-bs-target="#modalModifier">
                                             <i class="bi bi-pencil-square me-1"></i>Modifier
                                         </button>
-                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalSupprimer">
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modalSupprimer">
                                             <i class="bi bi-trash me-1"></i>Supprimer
                                         </button>
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded" alt="Produit"></td>
+                            <tr role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasRight">
+                                <td><img src="../../assets/img/icons/ads-placeholder.svg" width="55" class="rounded"
+                                        alt="Produit"></td>
                                 <td class="fw-semibold">Sirop</td>
                                 <td>Médicaments</td>
                                 <td>3200 FCFA</td>
                                 <td class="text-center">
                                     <div class="d-flex justify-content-center gap-2 flex-wrap">
-                                        <button class="btn btn-light btn-sm text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#modalModifier">
+                                        <button class="btn btn-light btn-sm text-dark fw-semibold"
+                                            data-bs-toggle="modal" data-bs-target="#modalModifier">
                                             <i class="bi bi-pencil-square me-1"></i>Modifier
                                         </button>
-                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalSupprimer">
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#modalSupprimer">
                                             <i class="bi bi-trash me-1"></i>Supprimer
                                         </button>
                                     </div>
@@ -120,8 +129,10 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary rounded-2 px-2" data-bs-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-pharm text-white fw-semibold rounded-2 px-2">Enregistrer les modifications</button>
+                    <button type="button" class="btn btn-secondary rounded-2 px-2"
+                        data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-pharm text-white fw-semibold rounded-2 px-2">Enregistrer les
+                        modifications</button>
                 </div>
             </div>
         </div>
@@ -140,10 +151,129 @@
                     <p class="text-muted mb-0">Cette action est irréversible.</p>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-secondary rounded-2 px-2" data-bs-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-secondary rounded-2 px-2"
+                        data-bs-dismiss="modal">Annuler</button>
                     <button type="button" class="btn btn-danger rounded-2 px-2">Oui, supprimer</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"
+        style="width: 600px;">
+
+        <!-- En-tête de l'offcanvas -->
+        <div class="offcanvas-header pb-0">
+            <h3 class="offcanvas-title fw-bold" id="offcanvasExampleLabel" style="color: #333;">
+                Modifier ce produit</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- Corps de l'offcanvas -->
+        <div class="offcanvas-body">
+            <form id="productEditForm">
+                <!-- Champ caché : id du produit modifié (vide = nouveau produit) -->
+                <input type="hidden" id="productId">
+
+                <!-- Section Image -->
+                <div class="mb-4 text-center">
+
+                    <label class="form-label d-block text-start text-muted small mb-3">
+                        Cliquez sur l'image pour la modifier
+                    </label>
+
+                    <label for="productImageInput" class="d-inline-block" style="cursor: pointer;">
+
+                        <img id="productImagePreview" src="Pharma Ressources/Product-Images/product6.jpg" alt="Produit"
+                            class="img-fluid rounded" style="max-height: 200px; object-fit: contain;">
+
+                    </label>
+
+                    <input type="file" class="d-none" id="productImageInput" accept="image/*">
+
+                </div>
+
+                <!-- Nom du produit -->
+                <div class="mb-4 custom-form-group">
+                    <label for="productName" class="form-label fw-bold small mb-1">Changez le
+                        nom du produit</label>
+                    <input type="text" class="form-control custom-input" id="productName" required>
+                </div>
+
+                <!-- Description du produit -->
+                <div class="mb-4 custom-form-group">
+                    <label for="productDesc" class="form-label fw-bold small mb-1">Changez la
+                        description du produit</label>
+                    <textarea class="form-control custom-input" id="productDesc" rows="4"></textarea>
+                </div>
+
+                <!-- Catégorie du produit -->
+                <div class="mb-4 custom-form-group">
+                    <label for="productCategory" class="form-label fw-bold small mb-1">
+                        Changez la catégorie du produit
+                    </label>
+
+                    <select id="productCategory" class="form-select custom-input" required>
+                        <option value="" selected disabled>Choisissez une catégorie</option>
+                        <option value="Sirop & Solutions">Sirop &amp; Solutions</option>
+                        <option value="Médicaments & Comprimés">Médicaments &amp; Comprimés
+                        </option>
+                        <option value="Appareils & Dispositifs">Appareils &amp; Dispositifs
+                        </option>
+                        <option value="Vitamines & Suppléments">Vitamines &amp; Suppléments
+                        </option>
+                        <option value="Protections">Protections</option>
+                        <option value="Huiles & Extraits">Huiles &amp; Extraits</option>
+                        <option value="Soins & Lotions">Soins &amp; Lotions</option>
+                        <option value="Bucco-Dentaire">Bucco-Dentaire</option>
+                    </select>
+                </div>
+
+                <!-- Prix et réduction -->
+                <div class="row g-3 mb-4">
+                    <div class="col-6 custom-form-group">
+                        <label for="productPrice" class="form-label fw-bold small mb-1">Prix
+                            (fcfa)</label>
+                        <input type="number" min="0" class="form-control custom-input" id="productPrice" required>
+                    </div>
+                    <div class="col-6 custom-form-group">
+                        <label for="productReduction" class="form-label fw-bold small mb-1">Réduction
+                            (%)</label>
+                        <input type="number" min="0" max="100" class="form-control custom-input" id="productReduction"
+                            value="0">
+                    </div>
+                </div>
+
+                <!-- Prix actuel (après réduction), mis à jour en direct -->
+                <div class="mb-4 d-flex align-items-center gap-2">
+                    <span class="small fw-bold text-muted">Prix actuel :</span>
+                    <span id="productFinalPricePreview" class="fw-bold theme-text">0 fcfa</span>
+                    <span id="productReductionLabel" class="small fw-bold text-muted">après réduction de 0%</span>
+                </div>
+
+                <!-- Stock -->
+                <div class="mb-4 custom-form-group">
+                    <label for="productStock" class="form-label fw-bold small mb-1">Mettre à
+                        jour la quantité en stock</label>
+                    <input type="number" min="0" class="form-control custom-input" id="productStock" required>
+                </div>
+
+                <!-- Note (étoiles) -->
+                <div class="mb-4 custom-form-group">
+                    <label for="productRating" class="form-label fw-bold small mb-1">Note
+                        (sur 5)</label>
+                    <input type="number" min="0" max="5" step="0.5" class="form-control custom-input" id="productRating"
+                        value="5">
+                </div>
+
+                <!-- Boutons d'action -->
+                <div class="d-flex justify-content-end gap-2 mt-5">
+                    <button type="submit" class="btn text-white px-4 fw-semibold"
+                        style="background-color: #3caea3; border-radius: 6px;">Valider</button>
+                    <button type="button" class="btn btn-danger px-4 fw-semibold" data-bs-dismiss="offcanvas"
+                        style="background-color: #e63946; border-radius: 6px;">Annuler</button>
+                </div>
+            </form>
         </div>
     </div>
 
