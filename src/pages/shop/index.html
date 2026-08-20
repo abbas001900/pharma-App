@@ -15,7 +15,7 @@
     <!-- Header -->
     <header class="mb-4">
         <nav class="w-100 bg-pharm pt-2">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
                 <p class="text-white mb-2 mb-md-0">Livraison gratuite pour toute commande de plus de 10.000 FCFA</p>
                 <ul class="text-white nav">
                     <li class="nav-item"><a href="#" class="text-white text-decoration-none"><i
@@ -30,59 +30,59 @@
             </div>
         </nav>
 
-        <form action="#" class="col-10 col-sm-8 col-md-5 mx-auto rounded-3 overflow-hidden my-4">
-            <div class="input-group flex-nowrap mx-auto">
-                <input type="text" id="search-input" class="form-control no-outline" placeholder="Rechercher..."
-                    aria-label="Recherche">
-                <label for="search-input" class="input-group-text bg-pharm cursor-pointer" id="addon-wrapping">
-                    <i class="bi bi-search-heart text-white"></i>
-                </label>
+        <nav class="container-fluid d-flex flex-column flex-lg-row justify-lg-center align-items-center pt-3 gap-3">
+            <div class="w-100 col d-flex justify-content-between gap-3 align-items-center">
+                <a href="./index.html" class="nav-link p-0 text-decoration-none">
+                    <img class="img-fluid" src="../../assets/img/icons/Brand-Logo.png" alt="Logo Application"
+                        style="max-height: 100px;">
+                </a>
+                <!-- Bouton burger (<lg) -->
+                <div class="d-lg-none text-end">
+                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+                </div>
             </div>
-        </form>
+            <form action="#" class="mx-auto rounded-3 overflow-hidden my-4" style="max-width: 30rem; width: 100%;">
+                <div class="input-group flex-nowrap mx-auto">
+                    <input type="text" id="search-input" class="form-control no-outline" placeholder="Rechercher..."
+                        aria-label="Recherche">
+                    <label for="search-input" class="input-group-text bg-pharm cursor-pointer" id="addon-wrapping">
+                        <i class="bi bi-search-heart text-white"></i>
+                    </label>
+                </div>
+            </form>
+            <!-- Menu compte (lg+) -->
+            <div class="col d-none d-lg-block">
+                <ul class="nav nav-underline justify-content-end align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link text-black" href="./src/pages/sign-in/index.html">Sign
+                            In</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#">Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#"><i class="bi bi-heart fs-5"></i></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-black" href="#"><i class="bi bi-bag fs-5"></i>
+                            <span>0 FCFA</span></a></li>
+                </ul>
+            </div>
+        </nav>
 
         <nav class="container-fluid">
             <div class="row justify-content-between align-items-center px-3">
-                <div class="col-6 col-lg-3">
-                    <a href="../../../index.html" class="nav-link p-0 text-decoration-none">
-                        <img class="img-fluid" src="../../assets/img/icons/Brand-Logo.png" alt="Logo Application"
-                            style="max-height: 50px;">
-                    </a>
-                </div>
-
                 <!-- Menu central (lg+) -->
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="row d-none d-lg-flex">
                     <ul class="nav nav-underline justify-content-center">
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="../../../index.html">Home
                                 +</a>
                         </li>
                         <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page"
-                                href="index.html">Shop +</a></li>
+                                href="index.html">Shop
+                                +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Blog +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Page +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">On Sales +</a></li>
                         <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Contact +</a></li>
                     </ul>
-                </div>
-
-                <!-- Menu compte (lg+) -->
-                <div class="col-lg-3 d-none d-lg-block">
-                    <ul class="nav nav-underline justify-content-end align-items-center gap-2">
-                        <li class="nav-item"><a class="nav-link text-black" href="../sign-in/index.html">Sign In</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#">Sign Up</a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#"><i
-                                    class="bi bi-heart fs-5"></i></a></li>
-                        <li class="nav-item"><a class="nav-link text-black" href="#"><i class="bi bi-bag fs-5"></i>
-                                <span>0 FCFA</span></a></li>
-                    </ul>
-                </div>
-
-                <!-- Bouton burger (<lg) -->
-                <div class="col-6 d-lg-none text-end">
-                    <button class="btn p-0 border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Ouvrir le menu">
-                        <i class="bi bi-list fs-1"></i>
-                    </button>
                 </div>
             </div>
         </nav>
@@ -95,9 +95,12 @@
             </div>
             <div class="offcanvas-body d-flex flex-column">
                 <ul class="nav flex-column gap-2 mb-4">
-                    <li class="nav-item"><a class="nav-link text-black fw-bold" href="../../../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active fw-bold" aria-current="page"
-                            href="index.html">Shop</a></li>
+                            href="../../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-black fw-bold"
+                            href="index.html">Shop</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">Page</a></li>
                     <li class="nav-item"><a class="nav-link text-black fw-bold" href="#">On Sales</a></li>
@@ -105,12 +108,14 @@
                 </ul>
                 <hr>
                 <ul class="nav flex-column gap-2 mt-3">
-                    <li class="nav-item"><a class="nav-link text-black" href="../sign-in/index.html">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link text-black" href="../../pages/sign-in/index.html">Sign
+                            In</a></li>
                     <li class="nav-item"><a class="nav-link text-black" href="#">Sign Up</a></li>
                     <li class="nav-item"><a class="nav-link text-black" href="#"><i
                                 class="bi bi-heart fs-5 me-2"></i>Favoris</a></li>
                     <li class="nav-item"><a class="nav-link text-black" href="#"><i
-                                class="bi bi-bag fs-5 me-2"></i>Panier — 0 FCFA</a></li>
+                                class="bi bi-bag fs-5 me-2"></i>Panier —
+                            0 FCFA</a></li>
                 </ul>
             </div>
         </div>
@@ -193,8 +198,7 @@
                                 <span class="ms-3 fw-semibold small">HUILES & EXTRAITS</span>
                             </li>
 
-                            <li
-                                class="my-3 ps-2 fw-bold text-uppercase small text-muted">
+                            <li class="my-3 ps-2 fw-bold text-uppercase small text-muted">
                                 Médicaments
                             </li>
 

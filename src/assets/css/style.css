@@ -194,12 +194,12 @@
   }
 
   header .offcanvas {
-    background-color: var(--bs-pham-primary) !important;
+    background-color:  white;
   }
 
   header .offcanvas .nav-link,
   header .offcanvas .btn-close {
-    color: #fff !important;
+    color: var(--bs-pham-primary) !important;
   }
 
   header .d-lg-none .btn {
